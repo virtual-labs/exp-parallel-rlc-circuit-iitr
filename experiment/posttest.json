@@ -1,16 +1,27 @@
 [
     {
         "question": "For the following circuit calculate magnitude of impedance-",
+        
+        "name0":"circuit",
+        "image_path":"/images/posttest1.png",
+
         "answers": {
             "a": "187.97",
             "b": "192.18",
             "c": "76.22",
             "d": "201.87"
         },
+
         "correctAnswer": "a"
+
     },
+
     {
         "question": "For the following circuit calculate the phase angle of impedance-For the following circuit calculate the phase angle of impedance-",
+
+            "name":"circuit",
+            "image_path":"/images/posttest2.png",
+
         "answers": {
             "a": "41.3",
             "b": "32.5",
@@ -21,6 +32,11 @@
     },
     {
         "question": "For the following circuit calculate the magnitude of phase current-",
+
+         "name":"circuit",
+         "image_path":"/images/posttest3.png",
+
+
         "answers": {
             "a": "0.228 A",
             "b": "0.345 A",
@@ -61,6 +77,10 @@
     },
     {
         "question": "For the following parallel RLC circuit. Find conductance (in S)?",
+        
+        "name":"circuit",
+        "image_path":"/images/posttest4.png",
+
         "answers": {
             "a": "0.001",
             "b": "0.002",
@@ -71,6 +91,10 @@
     },
     {
         "question": "For the following parallel RLC circuit calculate admittance (in S)-",
+           
+        "name":"circuit",
+        "image_path":"/images/posttest5.png",
+           
         "answers": {
             "a": "0.089",
             "b": "0.0455",
@@ -81,6 +105,10 @@
     },
     {
         "question": "For the following parallel RLC circuit calculate source current (in A)",
+          
+        "name":"circuit",
+        "image_path":"/images/posttest6.png",
+
         "answers": {
             "a": "3.87",
             "b": "4.12",
@@ -91,6 +119,10 @@
     },
     {
         "question": "For the following parallel RLC circuit calculate power factor-",
+
+        "name":"circuit",
+        "image_path":"/images/posttest7.png",
+        
         "answers": {
             "a": " 0.965 lead",
             "b": "0.965 lag",
