@@ -25,7 +25,7 @@ The parallel RLC circuit above has a single node so the same instantaneous volta
 
 <br>
 
- $$V(t) = V~max~ sin(ωt) $$
+ <center> $V(t) = V~max~ sin(ωt) $ </center>
 
 <br>
 
@@ -35,12 +35,12 @@ For above parallel circuit amplitude of the source current across all three comp
 
 By applying KCL in the circuit
 
- $$I_S - I_R - I_L- I_C= 0 $$
+ <center> $I_S - I_R - I_L- I_C= 0 $</center>
 
- $$I_S - \frac{1} {RL} ∫Vdt- C \frac{dV} {dt}=0 $$
+ <center> $I_S - \frac{1} {RL} ∫Vdt- C \frac{dV} {dt}=0 $</center>
 
 
- $$V_S =IR+ \frac{1}{L} ∫Vdt+C \frac{dV} {dt} ........(1) $$
+ <center> $V_S =IR+ \frac{1}{L} ∫Vdt+C \frac{dV} {dt} ........(1) $</center>
 
 <br>
 
@@ -57,23 +57,23 @@ Figure 2: Current Triangle
 
 This triangle obtained is also called current triangle. Here, Magnitude of voltage,
 
- $$|I_S|= \sqrt{(I_R)^2+(I_L-I_C)^2 } ........(2) $$
+ <center> $|I_S|= \sqrt{(I_R)^2+(I_L-I_C)^2 } ........(2) $</center>
 
 Voltage has same phase and amplitude in all components of parallel RLC circuit so current through each component can be described mathematically according to the volage across each element as shown below:
 
- $$ I_R= \frac{V}{R} sin(ωt+0°) $$
+ <center> $ I_R= \frac{V}{R} sin(ωt+0°) $</center>
 
- $$I_L= \frac {V}{X_L} sin(ωt-90°)= \frac{V}{jwL} $$
+ <center> $I_L= \frac {V}{X_L} sin(ωt-90°)= \frac{V}{jwL} $</center>
 
- $$I_C= \frac{V}{X_C} sin(ωt+90°)=Vjωc $$
+ <center> $I_C= \frac{V}{X_C} sin(ωt+90°)=Vjωc $</center>
 
  By substituting these values into the voltage triangle equation above-
 
- $$I_R= \frac{V}{R},I_L= \frac{V} {X_L} , I_C= \frac{V} {X_C} $$
+ <center> $I_R= \frac{V}{R},I_L= \frac{V} {X_L} , I_C= \frac{V} {X_C} $</center>
 
- $$I_S=\sqrt{(\frac{V}{R})^2+ (\frac{V}{X_L} -\frac{V}{X_C} )^2 } $$
+ <center> $I_S=\sqrt{(\frac{V}{R})^2+ (\frac{V}{X_L} -\frac{V}{X_C} )^2 } $</center>
 
- $$I_S=\frac{V} {\sqrt{(R)^2+ (X_L-X_C )^2 }} $$
+ <center> $I_S=\frac{V} {\sqrt{(R)^2+ (X_L-X_C )^2 }} $</center>
 
 On comparing this equation with the equation 1 we can obtain the admittance triangle
 
@@ -86,27 +86,27 @@ Figure 3: Admittance Triangle
 
 The admittance Y of the parallel RLC circuit depends on the frequency ω as $X_L$ & $X_C$ also depends on it. The admittance of circuit can be written as-
 
-$$Admittance, Y=\frac{1} {Z}=\frac{1}{\sqrt{R^2+ (ωL-\frac{1}{ωC})^2 }}  ........(3)  $$
+<center> $Admittance, Y=\frac{1} {Z}=\frac{1}{\sqrt{R^2+ (ωL-\frac{1}{ωC})^2 }}  ........(3)  $</center>
  
 The phase angle, Ø between the source voltage $V_S$ and the current I is the same as the angle between Z and R in the impedance triangle.
 
 The impedance Z has two component resistance, R and reactance, X. Similarly, admittance also has two components such as conductance, G (reciprocal of resistance, R) and susceptance, B (reciprocal of reactance, X). So admittance triangle of parallel RLC circuit is completely opposite to that of series impedance triangle. From the admittance triangle phase angle can be calculated as
 
-$$Power factor , Cos∅=\frac{G}{Y} ........(4)$$
+<center> $Power factor , Cos∅=\frac{G}{Y} ........(4)$</center>
 
- $$tan∅=\frac{B}{G} $$
+<center> $tan∅=\frac{B}{G} $</center>
 
 Admittance, Y = G - jB for parallel circuits where the real part G is the conductance and the imaginary part jB is the susceptance. In polar form this will be given as:
 
- $$Y=G+jB=\sqrt{G^2+B^2 }∠\frac{B}{G} $$
+ <center> $Y=G+jB=\sqrt{G^2+B^2 }∠\frac{B}{G} $</center>
 
 Further, power in the circuit can be calculated as,
 
-$$Apparent Power, S=VI $$
+<center> $Apparent Power, S=VI $</center>
 
-$$Active Power, P=VI cos∅ $$
+<center> $Active Power, P=VI cos∅ $</center>
 
-$$Reactive Power, Q= VI sin∅ $$
+<center> $Reactive Power, Q= VI sin∅ $</center>
 
 ### Advantages of Parallel RLC circuit
 
