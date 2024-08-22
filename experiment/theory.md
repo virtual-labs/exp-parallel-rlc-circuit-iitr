@@ -1,7 +1,4 @@
 
-# Parallel RLC Circuit 
-
-
 ### Theory
 
 <div align="justify" style="font-size:18px;">

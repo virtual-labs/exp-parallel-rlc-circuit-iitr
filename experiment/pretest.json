@@ -70,7 +70,7 @@
         "correctAnswer": "c"
     },
     {
-        "question": "For a parallel RLC circuit with 6A trough the resistor, 8A through the inductor, 5A through the capacitor. Calculate total line current?",
+        "question": "For a parallel RLC circuit with 6A through the resistor, 8A through the inductor, 5A through the capacitor. Calculate total line current?",
         "answers": {
             "a": "5.2 A",
             "b": " 3.1 A",
