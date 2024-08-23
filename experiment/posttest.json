@@ -1,7 +1,6 @@
 [
     {
-        "question": "For the following circuit calculate magnitude of impedance-",
-        "image" : "images/posttest1.png",
+        "question":"For the following circuit calculate magnitude of impedance- <br> <img src='images/posttest1.png'/>",
         "answers": {
             "a": "187.97",
             "b": "192.18",
@@ -11,8 +10,7 @@
         "correctAnswer": "a"
     },
     {
-        "question": "For the following circuit calculate the phase angle of impedance-For the following circuit calculate the phase angle of impedance-",
-        "image": "images/posttest2.png",
+        "question": "For the following circuit calculate the phase angle of impedance-For the following circuit calculate the phase angle of impedance- <br> <img src='images/posttest2.png'/>",
         "answers": {
             "a": "41.3",
             "b": "32.5",
@@ -22,8 +20,7 @@
         "correctAnswer": "a"
     },
     {
-        "question": "For the following circuit calculate the magnitude of phase current-",
-        "image":"images/posttest3.png",
+        "question": "For the following circuit calculate the magnitude of phase current-<br> <img src='images/posttest3.png'/>",
         "answers": {
             "a": "0.228 A",
             "b": "0.345 A",
@@ -63,8 +60,7 @@
         "correctAnswer": "b"
     },
     {
-        "question": "For the following parallel RLC circuit. Find conductance (in S)?",
-        "image":"images/posttest4.png",
+        "question": "For the following parallel RLC circuit. Find conductance (in S)?<br> <img src='images/posttest4.png'/>",
         "answers": {
             "a": "0.001",
             "b": "0.002",
@@ -74,8 +70,7 @@
         "correctAnswer": "b"
     },
     {
-        "question": "For the following parallel RLC circuit calculate admittance (in S)-",
-        "image":"images/posttest5.png",
+        "question": "For the following parallel RLC circuit calculate admittance (in S)-<br> <img src='images/posttest5.png'/>",
         "answers": {
             "a": "0.089",
             "b": "0.0455",
@@ -85,8 +80,7 @@
         "correctAnswer": "c"
     },
     {
-        "question": "For the following parallel RLC circuit calculate source current (in A)",
-        "image":"images/posttest6.png",
+        "question": "For the following parallel RLC circuit calculate source current (in A)-<br> <img src='images/posttest6.png'/>",
         "answers": {
             "a": "3.87",
             "b": "4.12",
@@ -96,13 +90,12 @@
         "correctAnswer": "a"
     },
     {
-        "question": "For the following parallel RLC circuit calculate power factor-",
-        "image":"images/posttest7.png",
+        "question": "For the following parallel RLC circuit calculate power factor-<br> <img src='images/posttest7.png'/>",
         "answers": {
-            "a": " 0.965 lead",
+            "a": "0.965 lead",
             "b": "0.965 lag",
             "c": "0.259 lead",
-            "d": " 0.259 lag"
+            "d": "0.259 lag"
         },
         "correctAnswer": "d"
     }
