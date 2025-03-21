@@ -1,6 +1,8 @@
 ## Pre Test 
 #### Please attempt the following questions
 
+### Note- Reference books are available in the reference section.
+
 <div align="justify" style="font-size:18px;">
 
 1. In a parallel RLC circuit, the phase difference between the voltage across the capacitor and the voltage across the resistor is? 
@@ -35,9 +37,9 @@ D. Increases
 
 Q4. The applied voltage in a parallel RLC circuit is given by -
 
-V= 100 sin( 314t + (π/4))  
+V= 100 sin( 314t + (π/4))
 
-    If the values of R, L and C be given as 30 Ω, 1.3 mH and 30 μF. Find magnitude of admittance?
+If the values of R, L and C be given as 30 Ω, 1.3 mH and 30 μF. Find the magnitude of admittance?
 
 A. 4.818
 
@@ -49,9 +51,9 @@ D. 1.212
  
 Q5. The applied voltage in a parallel RLC circuit is given by
 
- V= 100 sin( 314t + (π/4)) 
-  
-  If the values of R, L and C be given as 30 Ω, 1.3 mH and 30 μF. Find phase angle?
+V= 100 sin( 314t + (π/4))
+
+If the values of R, L and C be given as 30 Ω, 1.3 mH and 30 μF.Find the phase angle?
 
 A. -75.92°
 
@@ -63,9 +65,9 @@ D. -89.22°
  
 Q6. The applied voltage in a parallel RLC circuit is given by
 
-   V= 100 sin( 314t + (π/4)) 
+V= 100 sin( 314t + (π/4))
 
- If the values of R, L and C be given as 30 Ω, 1.3 mH and 30 μF. Find source current?
+If the values of R, L and C be given as 30 Ω, 1.3 mH and 30 μF. Find the source current?
 
 A. -172.486∠44.22°
 
@@ -75,7 +77,7 @@ C. 172.486∠44.22°
 
 D. -172.486∠-44.22°
  
-Q7. In RLC parallel circuit, if current through capacitor and inductor is equal, then, what is the power factor?
+Q7. In an RLC parallel circuit, if the current through the capacitor and the inductor is equal,then what is the power factor?
 
 A. Lagging
 
@@ -85,7 +87,7 @@ C. Unity
 
 D. Zero
 
-Q8. For a parallel RLC circuit with 6A through the resistor, 8A through the inductor, 5A through the capacitor. Calculate total line current?
+Q8. For a parallel RLC circuit with 6A through the resistor, 8A through the inductor, 5A through the capacitor.Calculate the total line current?
 
 A. 5.2 A
 
@@ -95,7 +97,7 @@ C. 7.2 A
 
 D. 6.7 A
 
-Q9. For a parallel RLC circuit with a 16Ω resistor, 8Ω inductor, 20Ω capacitor, and a 120V power supply. Find the Current through the resistor?
+Q9. For a parallel RLC circuit with a 16Ω resistor, 8Ω inductor, 20Ω capacitor, and a 120V power supply.Find the Current through the resistor?
 
 A. 7 A
 
@@ -105,7 +107,7 @@ C. 15 A
 
 D. 6 A
 
-Q10. For a parallel RLC circuit with a 16Ω resistor, 8Ω inductor, 20Ω capacitor, and a 120V power supply. Find the Current through the inductor?
+Q10. For a parallel RLC circuit with a 16Ω resistor, 8Ω inductor, 20Ω capacitor, and a 120V power supply.Find the Current through the inductor?
 
 A. 7 A
 
@@ -114,6 +116,5 @@ B. 7.5 A
 C. 15 A
 
 D. 6 A
-
 
 </div>

@@ -1,6 +1,6 @@
 [
     {
-        "question": " In a parallel RLC circuit, the phase difference between the voltage across the capacitor and the voltage across the resistor is? ",
+        "question": " In a parallel RLC circuit, the phase difference between the voltage across the capacitor and the voltage across the resistor is?",
         "answers": {
             "a": "0°",
             "b": "90°",
@@ -30,17 +30,17 @@
         "correctAnswer": "b"
     },
     {
-        "question": "The applied voltage in a parallel RLC circuit is given by -  'V= 100 sin( 314t + (π/4))' If the values of R, L and C be given as 30 Ω, 1.3 mH and 30 μF. Find magnitude of admittance?",
+        "question": "The applied voltage in a parallel RLC circuit is given by V= 100 sin( 314t + (π/4)).If the values of R, L and C be given as 30 Ω, 1.3 mH and 30 μF.Find the magnitude of admittance?",
         "answers": {
             "a": "4.818",
             "b": "3.223",
-            "c": "12.439",
+            "c": "2.439",
             "d": "1.212"
         },
         "correctAnswer": "c"
     },
     {
-        "question": "The applied voltage in a parallel RLC circuit is given by 'V= 100 sin( 314t + (π/4))' If the values of R, L and C be given as 30 Ω, 1.3 mH and 30 μF. Find phase angle?",
+        "question": "The applied voltage in a parallel RLC circuit is given by V= 100 sin( 314t + (π/4)).If the values of R, L and C be given as 30 Ω, 1.3 mH and 30 μF.Find the phase angle?",
         "answers": {
             "a": "-75.92°",
             "b": "75.92°",
@@ -50,7 +50,7 @@
         "correctAnswer": "d"
     },
     {
-        "question": "The applied voltage in a parallel RLC circuit is given by 'V= 100 sin( 314t + (π/4))'If the values of R, L and C be given as 30 Ω, 1.3 mH and 30 μF. Find source current?",
+        "question": "The applied voltage in a parallel RLC circuit is given by V= 100 sin( 314t + (π/4)).If the values of R, L and C be given as 30 Ω, 1.3 mH and 30 μF.Find the source current?",
         "answers": {
             "a": "-172.486∠44.22°",
             "b": "172.486∠-44.22°",
@@ -60,9 +60,9 @@
         "correctAnswer": "b"
     },
     {
-        "question": "In RLC parallel circuit, if current through capacitor and inductor is equal, then, What is the power factor?",
+        "question": "In an RLC parallel circuit, if the current through the capacitor and the inductor is equal, then, What is the power factor?",
         "answers": {
-            "a": " Lagging",
+            "a": "Lagging",
             "b": "leading",
             "c": "unity",
             "d": "zero"
@@ -70,17 +70,17 @@
         "correctAnswer": "c"
     },
     {
-        "question": "For a parallel RLC circuit with 6A through the resistor, 8A through the inductor, 5A through the capacitor. Calculate total line current?",
+        "question": "For a parallel RLC circuit with 6A through the resistor, 8A through the inductor, 5A through the capacitor.Calculate the total line current?",
         "answers": {
             "a": "5.2 A",
-            "b": " 3.1 A",
+            "b": "3.1 A",
             "c": "7.2 A",
             "d": "6.7 A"
         },
         "correctAnswer": "d"
     },
     {
-        "question": "For a parallel RLC circuit with a 16Ω resistor, 8Ω inductor, 20Ω capacitor, and a 120V power supply. Find the Current through the resistor?",
+        "question": "For a parallel RLC circuit with a 16Ω resistor, 8Ω inductor, 20Ω capacitor, and a 120V power supply.Find the Current through the resistor?",
         "answers": {
             "a": "7 A",
             "b": " 7.5 A",
@@ -90,7 +90,7 @@
         "correctAnswer": "b"
     },
     {
-        "question": "For a parallel RLC circuit with a 16Ω resistor, 8Ω inductor, 20Ω capacitor, and a 120V power supply. Find the Current through the inductor?",
+        "question": "For a parallel RLC circuit with a 16Ω resistor, 8Ω inductor, 20Ω capacitor, and a 120V power supply.Find the Current through the inductor?",
         "answers": {
             "a": "7 A",
             "b": " 7.5 A",

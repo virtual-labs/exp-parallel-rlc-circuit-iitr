@@ -1,2 +1,2 @@
-To Study and measure the Voltage, Current, Power and Power factor in Parallel RLC circuit.
+To study and measure the voltage, current, power and power factor in parallel RLC circuit.
 
