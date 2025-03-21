@@ -1,6 +1,7 @@
 [
     {
-        "question":"For the following circuit calculate magnitude of impedance- <br> <img src='images/posttest1.png'/>",
+        "question": "For the following circuit calculate the magnitude of the impedance-",
+        "image" : "images/posttest1.png",
         "answers": {
             "a": "187.97",
             "b": "192.18",
@@ -10,7 +11,8 @@
         "correctAnswer": "a"
     },
     {
-        "question": "For the following circuit calculate the phase angle of impedance-For the following circuit calculate the phase angle of impedance- <br> <img src='images/posttest2.png'/>",
+        "question": "For the following circuit, calculate the phase angle of impedance-",
+        "image": "images/posttest2.png",
         "answers": {
             "a": "41.3",
             "b": "32.5",
@@ -20,7 +22,8 @@
         "correctAnswer": "a"
     },
     {
-        "question": "For the following circuit calculate the magnitude of phase current-<br> <img src='images/posttest3.png'/>",
+        "question": "For the following circuit calculate the magnitude of the phase current-",
+        "image":"images/posttest3.png",
         "answers": {
             "a": "0.228 A",
             "b": "0.345 A",
@@ -30,14 +33,14 @@
         "correctAnswer": "c"
     },
     {
-        "question": "For a parallel RLC circuit with a 16 Ω resistor, 8 Ω inductor, 20 Ω capacitor, and a 120-V power supply. Find the Current through the capacitor?",
+        "question": "Two impedance given by Z<sub>n</sub>=(10+j5) and Z<sub>2</sub>=(8+J6) are joined in parallel and connected across a voltage of v=200+j0. Calculate the circuit current.",
         "answers": {
-            "a": "7 A",
-            "b": "7.5 A",
-            "c": "15 A",
-            "d": "6 A"
+            "a": "35.74&ang;-28&deg;",
+            "b": "37.74&ang;-32&deg;",
+            "c": "32.74&ang;-32&deg;",
+            "d": "32.14&ang;-65&deg;"
         },
-        "correctAnswer": "d"
+        "correctAnswer": "b"
     },
     {
         "question": "For a parallel RLC circuit with a 16 Ω resistor, 8 Ω inductor, 20 Ω capacitor, and a 120-V power supply. Find the source current?",
@@ -50,7 +53,7 @@
         "correctAnswer": "a"
     },
     {
-        "question": " While drawing vector diagram for a series circuit, the reference vector is?",
+        "question": " While drawing the vector diagram for a series circuit, the reference vector is?",
         "answers": {
             "a": "Voltage",
             "b": "Current",
@@ -60,7 +63,8 @@
         "correctAnswer": "b"
     },
     {
-        "question": "For the following parallel RLC circuit. Find conductance (in S)?<br> <img src='images/posttest4.png'/>",
+        "question": "For the following parallel RLC circuit. Find the conductance (in S)-?",
+        "image":"images/posttest4.png",
         "answers": {
             "a": "0.001",
             "b": "0.002",
@@ -70,7 +74,8 @@
         "correctAnswer": "b"
     },
     {
-        "question": "For the following parallel RLC circuit calculate admittance (in S)-<br> <img src='images/posttest5.png'/>",
+        "question": "For the following parallel RLC circuit, calculate the admittance (in S)-",
+        "image":"images/posttest5.png",
         "answers": {
             "a": "0.089",
             "b": "0.0455",
@@ -80,22 +85,24 @@
         "correctAnswer": "c"
     },
     {
-        "question": "For the following parallel RLC circuit calculate source current (in A)-<br> <img src='images/posttest6.png'/>",
+        "question": "For the following parallel RLC circuit, calculate the source current (in A)",
+        "image":"images/posttest6.png",
         "answers": {
             "a": "3.87",
             "b": "4.12",
-            "c": " 1.27",
+            "c": "1.27",
             "d": "2.92"
         },
         "correctAnswer": "a"
     },
     {
-        "question": "For the following parallel RLC circuit calculate power factor-<br> <img src='images/posttest7.png'/>",
+        "question": "For the following parallel RLC circuit, calculate the power factor-",
+        "image":"images/posttest7.png",
         "answers": {
-            "a": "0.965 lead",
-            "b": "0.965 lag",
-            "c": "0.259 lead",
-            "d": "0.259 lag"
+            "a": "0.96 lead",
+            "b": "0.96 lag",
+            "c": "0.25 lead",
+            "d": "0.25 lag"
         },
         "correctAnswer": "d"
     }

@@ -173,7 +173,8 @@ instance.bind("ready", function () {
         paintStyle: { fill: "rgb(97,106,229)" },
         connectionType: "positive",
         maxConnections: 10,
-        connectionsDetachable: true
+        connectionsDetachable: true,
+        connector: ["StateMachine", { curviness: -20, proximityLimit: 10 }]
     })
 
     instance.addEndpoint([MainVoltmeterNegative, MainAmmeterNegative, MCB_Negative, VariacInNegative, VariacOutNegative], {
@@ -184,7 +185,8 @@ instance.bind("ready", function () {
         paintStyle: { fill: "rgb(229, 97, 97)" },
         connectionType: "negative",
         maxConnections: 10,
-        connectionsDetachable: true
+        connectionsDetachable: true,
+        connector: ["StateMachine", { curviness: -10, proximityLimit: 10 }]
     })
 
     instance.addEndpoint([MainAmmeterNegative], {
@@ -256,6 +258,7 @@ instance.bind("ready", function () {
         connectionType: "positive",
         maxConnections: 10,
         connectionsDetachable: true,
+        connector: ["StateMachine", { curviness: -60, proximityLimit: 10 }]
     })
 })
 
@@ -348,6 +351,7 @@ function AmmeterToLoad() {
 }
 
 function ThreeToOne(node, list) {
+
     let count = 0
     for (let i = 0; i < list.length; i++) {
         if (isConnected(list[i], node)) {
@@ -373,6 +377,7 @@ function ResolveVandL() {
 }
 
 function PolarityCheck() {
+
     let indcAmm = ammeterList[connList.indexOf(2)]
     return ((indcAmm[0], InductorPositive) || (indcAmm[1], InductorNegative))
 }
@@ -380,29 +385,157 @@ function PolarityCheck() {
 check.onclick = function checkConn() {
     if (staticConn()) {
 
+
         AmmeterToLoad()
 
         if (PolarityCheck()) {
+
             if (ResolveVandL() && (instance.getAllConnections().length == 17)) {
                 MCB.disabled = false
-                window.alert("Right connections! ")
+                window.alert("Right connections! ");
+
+            document.getElementById('mcb_p').style.pointerEvents='none';
+            document.getElementById('mcb_n').style.pointerEvents='none';
+            document.getElementById('Mp_v').style.pointerEvents='none';
+            document.getElementById('Mn_v').style.pointerEvents='none';
+            document.getElementById('Mp_a').style.pointerEvents='none';
+            document.getElementById('Mn_a').style.pointerEvents='none';
+            document.getElementById('w_v').style.pointerEvents='none';
+            document.getElementById('w_l').style.pointerEvents='none';
+            document.getElementById('w_m').style.pointerEvents='none';
+            document.getElementById('w_c').style.pointerEvents='none';
+            document.getElementById('Tp_a').style.pointerEvents='none';
+            document.getElementById('Tn_a').style.pointerEvents='none';
+            document.getElementById('Sp_a').style.pointerEvents='none';
+            document.getElementById('Sn_a').style.pointerEvents='none';
+            document.getElementById('Bp_a').style.pointerEvents='none';
+            document.getElementById('Bn_a').style.pointerEvents='none';
+            document.getElementById('i_p').style.pointerEvents='none';
+            document.getElementById('i_n').style.pointerEvents='none';
+            document.getElementById('c_n').style.pointerEvents='none';
+            document.getElementById('c_p').style.pointerEvents='none';
+            document.getElementById('t_a').style.pointerEvents='none';
+            document.getElementById('t_b').style.pointerEvents='none';
+            document.getElementById('t_c').style.pointerEvents='none';
+            document.getElementById('t_d').style.pointerEvents='none';
+            document.getElementById('rh_p').style.pointerEvents='none';
+            document.getElementById('rh_n').style.pointerEvents='none';
+
+
+                instance.addEndpoint([MainVoltmeterPositive, MainAmmeterPositive, MCB_Positive, VariacInPositive, VariacOutPositive, WattmeterM, WattmeterC], {
+                    endpoint: "Dot",
+                    anchor: ["Center"],
+                    isSource: true,
+                    isTarget: true,
+                    paintStyle: { fill: "rgb(97,106,229)" },
+                    connectionType: "positive",
+                    maxConnections: 0,
+                    connectionsDetachable: true
+                })
+            
+                instance.addEndpoint([MainVoltmeterNegative, MainAmmeterNegative, MCB_Negative, VariacInNegative, VariacOutNegative], {
+                    endpoint: "Dot",
+                    anchor: ["Center"],
+                    isSource: true,
+                    isTarget: true,
+                    paintStyle: { fill: "rgb(229, 97, 97)" },
+                    connectionType: "negative",
+                    maxConnections: 0,
+                    connectionsDetachable: true
+                })
+            
+                instance.addEndpoint([MainAmmeterNegative], {
+                    endpoint: "Dot",
+                    anchor: ["Center"],
+                    isSource: true,
+                    isTarget: true,
+                    paintStyle: { fill: "rgb(229, 97, 97)" },
+                    connectionType: "negative",
+                    maxConnections: 0,
+                    connectionsDetachable: true,
+                    connector: ["StateMachine", { curviness: -40, proximityLimit: 10 }]
+                })
+            
+                instance.addEndpoint([WattmeterC, WattmeterM, ResistorPositive, InductorPositive, CapacitorPositive], {
+                    endpoint: "Dot",
+                    anchor: ["Center"],
+                    isSource: true,
+                    isTarget: true,
+                    paintStyle: { fill: "rgb(97,106,229)" },
+                    connectionType: "positive",
+                    maxConnections: 0,
+                    connectionsDetachable: true,
+                    connector: ["StateMachine", { curviness: -40, proximityLimit: 10 }]
+                })
+            
+                instance.addEndpoint([ResistorNegative, CapacitorNegative, InductorNegative], {
+                    endpoint: "Dot",
+                    anchor: ["Center"],
+                    isSource: true,
+                    isTarget: true,
+                    paintStyle: { fill: "rgb(229, 97, 97)" },
+                    connectionType: "negative",
+                    maxConnections: 0,
+                    connectionsDetachable: true,
+                    connector: ["StateMachine", { curviness: -40, proximityLimit: 10 }]
+                })
+            
+                instance.addEndpoint([TopAmmeterPositive, SecAmmeterPositive, BotAmmeterPositive], {
+                    endpoint: "Dot",
+                    anchor: ["Center"],
+                    isSource: true,
+                    isTarget: true,
+                    paintStyle: { fill: "rgb(97,106,229)" },
+                    connectionType: "positive",
+                    maxConnections: 0,
+                    connectionsDetachable: true,
+                    connector: ["StateMachine", { curviness: -30, proximityLimit: 20 }]
+                })
+            
+                instance.addEndpoint([WattmeterV,TopAmmeterNegative, SecAmmeterNegative, BotAmmeterNegative], {
+                    endpoint: "Dot",
+                    anchor: ["Center"],
+                    isSource: true,
+                    isTarget: true,
+                    paintStyle: { fill: "rgb(229, 97, 97)" },
+                    connectionType: "negative",
+                    maxConnections: 0,
+                    connectionsDetachable: true,
+                    connector: ["StateMachine", { curviness: -30, proximityLimit: 20 }]
+                })
+            
+                instance.addEndpoint([WattmeterL], {
+                    endpoint: "Dot",
+                    anchor: ["Center"],
+                    isSource: true,
+                    isTarget: true,
+                    paintStyle: { fill: "rgb(97,106,229)" },
+                    connectionType: "positive",
+                    maxConnections: 0,
+                    connectionsDetachable: true,
+                })
+                check.disabled = 1;
             }
+
             else {
-                window.alert("Invalid connections! ")
+
+                window.alert("Invalid connections!");
             }
         }
         else if (instance.getAllConnections().length == 0) {
-            window.alert("Please make connections!")
+
+            window.alert("Please make the connections!");
         }
         else {
-            window.alert("Invalid connections! ")
+            window.alert("Invalid connections!");
         }
     }
     else if (instance.getAllConnections().length == 0) {
-        window.alert("Please make connections!")
+
+        window.alert("Please make the connections!");
     }
     else {
-        window.alert("Invalid connections! ")
+        window.alert("Invalid connections!");
     }
 }
 
@@ -410,16 +543,17 @@ MCB.onclick = function toggleMCB() {
     flags3 = 1
     if (mcb_state == 1) {
         mcb_state = 0
-        MCB_image.src = 'images/MCB_off.png'
+        MCB_image.src = 'images/MCB_off.png';
         MCB.style.transform = "translate(0px, 0px)"
-        Var_image.src = 'images/Variac_OFF.png'
+        Var_image.src = 'images/Variac_OFF.png';
         Variac.disabled = true
         variac_state = 0
         setZero()
     }
     else if (mcb_state == 0) {
         mcb_state = 1
-        MCB_image.src = 'images/MCB_ON.png'
+        MCB.disabled= 1;
+        MCB_image.src = 'images/MCB_ON.png';
         MCB.style.transform = "translate(0px, -49px)"
         Variac.disabled = false
         if (variac_state == 1) {
@@ -432,12 +566,15 @@ Variac.onclick = function () {
     flags4 = 1
     if (variac_state == 1) {
         variac_state = 0
-        Var_image.src = 'images/Variac_OFF.png'
+       
+        Var_image.src = 'images/Variac_OFF.png';
         setZero()
+        
     }
     else if (variac_state == 0) {
         variac_state = 1
-        Var_image.src = 'images/Variac_ON.png'
+        Variac.style.pointerEvents = 'none';
+        Var_image.src = 'images/Variac_ON.png';
         if (mcb_state == 1) {
             updateMeters()
         }
@@ -445,6 +582,10 @@ Variac.onclick = function () {
 }
 
 add.onclick = function () {
+
+    add.disabled= 1;
+    knob.style.pointerEvents = 'none';
+   
     if (vtable.rows.length <= 6) {
         flags6 = 1
 
@@ -473,6 +614,8 @@ add.onclick = function () {
 }
 
 function task(i, x, y) {
+
+    knob.style.pointerEvents='none';
     setTimeout(function () {
         angle = angle + x
         var_voltage = var_voltage + y
@@ -485,6 +628,8 @@ function task(i, x, y) {
 
 knob.onclick = function () {
 
+    
+    
     if (variac_state == 1) {
         flags5 = 1
         for (let i = 0; i < 100; i++) {
@@ -503,6 +648,7 @@ knob.onclick = function () {
         }
 
     }
+   
 }
 
 function rotate_element(deg, elemnt) {
@@ -542,6 +688,7 @@ function setZero() {
 }
 
 verify.onclick = function verify() {
+
     let ansList = [50, 6.28, 636.94, 20, 5, 6.41, 0.128, 7.7, 7.63]
     let usrList = [Rcalc, XLcalc, XCcalc, Lcalc, Ccalc, Zcalc, coscalc, Pcalc, Qcalc]
     let marks = 0
@@ -554,11 +701,16 @@ verify.onclick = function verify() {
             usrList[i].style.backgroundColor = "red"
         }
     }
+
     if (marks == 9) {
-        window.alert("values are correct!")
+
+        window.alert("values are correct!");
     }
+
     else {
-        window.alert("Incorrect values")
+
+        window.alert("Incorrect values");
+        
     }
 }
 
@@ -569,57 +721,57 @@ window.onload = function setJsPlumb() {
     }, 50);
 }
 
-function highlight() {
+// function highlight() {
 
-    let conn = instance.getConnections();
+//     let conn = instance.getConnections();
 
-    if (conn.length >= 1) {
-        s1.style.color = "black";
-        s2.style.color = "red";
+//     if (conn.length >= 1) {
+//         s1.style.color = "black";
+//         s2.style.color = "red";
 
-    }
+//     }
 
-    if (flags2 == 1) {
-        s1.style.color = "black";
-        s2.style.color = "black";
-        s3.style.color = "red";
-    }
+//     if (flags2 == 1) {
+//         s1.style.color = "black";
+//         s2.style.color = "black";
+//         s3.style.color = "red";
+//     }
 
-    if (flags3 == 1) {
-        s1.style.color = "black";
-        s2.style.color = "black";
-        s3.style.color = "black";
-        s4.style.color = "red";
-    }
+//     if (flags3 == 1) {
+//         s1.style.color = "black";
+//         s2.style.color = "black";
+//         s3.style.color = "black";
+//         s4.style.color = "red";
+//     }
 
-    if ((flags4 == 1)) {
-        s1.style.color = "black";
-        s2.style.color = "black";
-        s3.style.color = "black";
-        s4.style.color = "black";
-        s5.style.color = "red";
-    }
+//     if ((flags4 == 1)) {
+//         s1.style.color = "black";
+//         s2.style.color = "black";
+//         s3.style.color = "black";
+//         s4.style.color = "black";
+//         s5.style.color = "red";
+//     }
 
-    if ((flags5 == 1)) {
-        s1.style.color = "black";
-        s2.style.color = "black";
-        s3.style.color = "black";
-        s4.style.color = "black";
-        s5.style.color = "black";
-        s6.style.color = "red";
-    }
+//     if ((flags5 == 1)) {
+//         s1.style.color = "black";
+//         s2.style.color = "black";
+//         s3.style.color = "black";
+//         s4.style.color = "black";
+//         s5.style.color = "black";
+//         s6.style.color = "red";
+//     }
 
-    if (flags6 == 1) {
-        s1.style.color = "black";
-        s2.style.color = "black";
-        s3.style.color = "black";
-        s4.style.color = "black";
-        s5.style.color = "black";
-        s6.style.color = "black";
-        s7.style.color = "red";
-    }
+//     if (flags6 == 1) {
+//         s1.style.color = "black";
+//         s2.style.color = "black";
+//         s3.style.color = "black";
+//         s4.style.color = "black";
+//         s5.style.color = "black";
+//         s6.style.color = "black";
+//         s7.style.color = "red";
+//     }
 
-}
+// }
 
 window.setInterval(highlight, 100);
 
