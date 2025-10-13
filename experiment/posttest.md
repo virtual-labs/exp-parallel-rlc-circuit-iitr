@@ -42,7 +42,7 @@ C. 0.639 A
 
 D. 0.541 A
  
-Q4. Two impedance given by Z<sub>n</sub>=(10+j5) and Z<sub>2</sub>(8+J6) are joined in parallel and connected across a voltage of v=200+j0.Calculate the circuit current.
+Q4. Two impedance given by Z<sub>n</sub>=(10+j5) and Z<sub>2</sub>(8+J6) are joined in parallel and connected across a voltage of v=200+j0. Calculate the circuit current.
 
 A. 35.74&ang;-28&deg;
 
